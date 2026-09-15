@@ -71,4 +71,4 @@ Para ejecutar este proyecto de forma local, asegúrate de tener Python instalado
 <img width="592" height="572" alt="pantalla-resultados" src="https://github.com/user-attachments/assets/68a42e54-7cfb-4485-89a3-a0d0f577f4fc" />
 
 ---
-*Desarrollado en el contexto del Grado en Inteligencia Artificia en la asignatura de Razonamiento con Incertidumbre*
+*Desarrollado en el contexto del Grado en Inteligencia Artificia en la materia de Razonamiento con Incertidumbre*
