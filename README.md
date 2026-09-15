@@ -7,7 +7,7 @@ El objetivo principal es traducir datos cualitativos e inciertos (como factores 
 ## 🚀 Características Principales
 
 *   **Manejo de Incertidumbre:** Cuantifica la influencia de factores de riesgo y síntomas utilizando Tablas de Probabilidad Condicional (CPDs).
-*   **Motor de Inferencia Bayesiana:** Emplea *Variable Elimination* para realizar la propagación de probabilidades y calcular la creencia posterior en tiempo real.
+*   **Motor de Inferencia Bayesiana:** Emplea el algoritmo *Variable Elimination* para realizar la propagación de probabilidades y calcular la creencia posterior en tiempo real.
 *   **Interfaz Gráfica Intuitiva:** Desarrollada de forma nativa para guiar al usuario a través de un flujo secuencial (Evaluación General -> Síntomas -> Resultados).
 *   **Generación de Reportes:** Permite exportar los resultados del diagnóstico (nivel de riesgo, factores influyentes y recomendaciones) a un documento PDF.
 
@@ -16,9 +16,16 @@ El objetivo principal es traducir datos cualitativos e inciertos (como factores 
 La topología de la Red Bayesiana (Grafo Acíclico Dirigido) se divide en dos niveles:
 
 1.  **Factores de Riesgo (Nodos Padre):** Antecedentes familiares, Edad y Estrés laboral/académico.
-2.  **Síntomas (Evidencia / Nodos Hijo):** Nerviosismo, Fatiga, Concentración, Irritabilidad, Tensión muscular y Trastornos del sueño.
+2.  **Síntomas (Evidencia / Nodos Hijo):** Sensación de nerviosismo, Facilidad de fatiga, Dificultad para concentrarse, Irritabilidad, Tensión muscular y Trastornos del sueño.
 
 El sistema opera a través de un patrón modular que desacopla la lógica de inferencia de la interfaz de usuario, garantizando la escalabilidad y mantenibilidad del software.
+
+## 📊 Interpretación de Resultados
+El módulo de interpretación del sistema analiza el porcentaje de ansiedad devuelto por la Red Bayesiana y lo clasifica en tres niveles de riesgo:
+
+*   🔴 **Nivel Alto (Rojo):** Probabilidad ≥ 80% (0.8). El sistema genera una alerta y recomienda *consultar con un especialista*.
+*   🟠 **Nivel Moderado (Naranja):** Probabilidad ≥ 40% (0.4) y < 80%. El sistema sugiere *monitorear los síntomas*.
+*   🟢 **Nivel Bajo (Verde):** Probabilidad < 40% (0.4). El sistema recomienda *continuar con la prevención*.
 
 ## 🛠️ Tecnologías Utilizadas
 
