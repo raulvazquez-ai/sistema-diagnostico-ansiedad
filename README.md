@@ -1,4 +1,4 @@
-# Proyecto RAIN: Sistema de Diagnóstico de Ansiedad 🧠📊
+# Proyecto RAIN: Sistema de Diagnóstico de Ansiedad 🧠
 
 El proyecto consiste en el desarrollo de un sistema de diagnóstico diseñado para ayudar a detectar la probabilidad de padecer ansiedad a partir de parámetros con incertidumbre. Se basa en la Inteligencia Artificial, utilizando una Red Bayesiana implementada con la biblioteca `pgmpy`.
 
